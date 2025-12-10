@@ -12,6 +12,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     Vue({
       template: { transformAssetUrls },
