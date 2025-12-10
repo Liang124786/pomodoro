@@ -19,4 +19,9 @@ export const useSettingsStore = defineStore('settings', () => {
     selected,
     selectedAlarm,
   }
+}, {
+  persist: {
+    key: 'pomodoro-settings',
+    pick: ['selected'],
+  },
 })

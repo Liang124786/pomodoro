@@ -14,4 +14,9 @@ export const useTimeStore = defineStore('time', () => {
     TIME,
     TIME_BREAK,
   }
+}, {
+  persist: {
+    key: 'pomodoro-settings',
+    pick: ['timeleft', 'isBreakTime'],
+  },
 })
