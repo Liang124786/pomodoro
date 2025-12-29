@@ -2,14 +2,14 @@
   <v-app>
     <v-app-bar>
       <!-- 加了container會把flex弄壞掉 需另外加class-->
-      <v-container class="d-flex align-center">
+      <v-container class="d-flex align-center" style="background: #0f172a">
         <v-app-bar-title>番茄鐘</v-app-bar-title>
         <v-btn prepend-icon="mdi-home" to="/">首頁</v-btn>
         <v-btn prepend-icon="mdi-format-list-bulleted" to="/list">事項</v-btn>
         <v-btn prepend-icon="mdi-cog" to="/settings">設定</v-btn>
       </v-container>
     </v-app-bar>
-    <v-main>
+    <v-main style="background-color: #1e293b; color: #e5e7eb">
       <!-- Component 代表目前頁面應該顯示的元件 -->
       <router-view v-slot="{ Component }">
         <!--
